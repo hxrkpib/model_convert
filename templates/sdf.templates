@@ -1,0 +1,14 @@
+<sdf version="1.6">
+<world name="templates_robot_name">
+<plugin
+	
+  filename="gz-sim-collada-world-exporter-system"
+	
+	name="gz::sim::systems::ColladaWorldExporter">
+	
+</plugin>
+	
+<!-- robot model -->
+  
+</world>
+</sdf>
