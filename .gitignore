@@ -1,1 +1,4 @@
 model
+ros2_tools/motion_editor/build
+ros2_tools/motion_editor/install
+ros2_tools/motion_editor/log

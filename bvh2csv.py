@@ -1,10 +1,12 @@
 import bpy
 import os
+import mathutils
+import math
 
 path = "/home/lizhen/fbx"
 # 指定起始帧和结束帧
 start_frame = 1  # 替换为你的起始帧
-end_frame = 10   # 替换为你的结束帧
+end_frame = 250   # 替换为你的结束帧
 # 指定要输出的骨骼名称列表
 selected_bones = [("mixamorig:Hips", "body"),
                   ("mixamorig:LeftArm", "left_arm_upper"),
@@ -60,7 +62,7 @@ with open(output_file_path, 'w') as f:
     f.write(",".join(header) + "\n")
 
     # 写入帧率行
-    f.write(f"{fps}\n")
+    # f.write(f"{fps}\n")
 
     # 遍历每一帧
     for frame in range(start_frame, end_frame + 1):
@@ -74,9 +76,18 @@ with open(output_file_path, 'w') as f:
                 bone_matrix = bone.matrix
                 world_position = bone_matrix.to_translation()
                 world_rotation = bone_matrix.to_quaternion()
-
-                row.extend([world_position.x, world_position.y, world_position.z,
-                            world_rotation.x, world_rotation.y, world_rotation.z, world_rotation.w])
+                pos_A = mathutils.Vector(
+                    (world_position.x, world_position.y, world_position.z))  # 替换为实际的坐标
+                rotation_A = mathutils.Quaternion(
+                    (world_rotation.w, world_rotation.x, world_rotation.y, world_rotation.z))  # 替换为实际的四元数
+                rotation_A_matrix = rotation_A.to_matrix()
+                rotation_z_minus_90 = mathutils.Euler(
+                    (0, 0, math.radians(90))).to_matrix()
+                pos_B = rotation_z_minus_90 @ pos_A  # 应用旋转到位置
+                rotation_B = rotation_z_minus_90 @ rotation_A_matrix  # 应用旋转到四元数
+                quaternion_B = rotation_B.to_quaternion()
+                row.extend([pos_B.x, pos_B.y, pos_B.z,
+                            quaternion_B.x, quaternion_B.y, quaternion_B.z, quaternion_B.w])
             else:
                 # 额外的调试信息
                 print(f"Bone '{bone_name[0]}' is not in the armature.")

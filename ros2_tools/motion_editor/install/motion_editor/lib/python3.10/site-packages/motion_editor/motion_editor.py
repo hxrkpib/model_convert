@@ -7,7 +7,6 @@ from rclpy.qos import QoSProfile
 from rclpy.executors import MultiThreadedExecutor
 import csv
 import tkinter as tk
-from .ctrl_ui import CtrlUI
 import threading
 import numpy as np
 
@@ -46,7 +45,7 @@ class PosePublisher(Node):
         self.root.title("MOTION EDITOR")
 
         self.plane_dict = {'default': [
-            100, 100, -0.016, 100, -100, -0.016, -100, -100, -0.016, -100, 100, -0.016]}
+            100, 100, 0, 100, -100, 0, -100, -100, 0, -100, 100, 0]}
 
         # 创建滑块
         self.slider = tk.Scale(root, from_=0, to=len(self.data_dict[f'{self.link_list[0]}_Position_X'])-1,
@@ -268,10 +267,10 @@ class PosePublisher(Node):
         # 计算球心到平面的距离
         d = np.abs(np.dot(N_normalized, C - P1))
         # 检查相交条件
-        if d > radius:
-            return False  # 不相交
-        else:
+        if d <= radius or C[2] < 0:
             return True
+        else:
+            return False
         # # 计算球心在平面上的投影点
         # projection = C - d * N_normalized
 

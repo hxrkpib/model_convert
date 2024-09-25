@@ -11,7 +11,6 @@ setup.py
 ../../build/motion_editor/motion_editor.egg-info/zip-safe
 launch/motion_editor.launch.py
 motion_editor/__init__.py
-motion_editor/ctrl_ui.py
 motion_editor/motion_editor.py
 resource/motion_editor
 rviz/default.rviz

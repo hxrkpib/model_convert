@@ -1,9 +1,7 @@
 /home/lizhen/works/open_source/model_convert/ros2_tools/motion_editor/install/motion_editor/lib/python3.10/site-packages/motion_editor/motion_editor.py
 /home/lizhen/works/open_source/model_convert/ros2_tools/motion_editor/install/motion_editor/lib/python3.10/site-packages/motion_editor/__init__.py
-/home/lizhen/works/open_source/model_convert/ros2_tools/motion_editor/install/motion_editor/lib/python3.10/site-packages/motion_editor/ctrl_ui.py
 /home/lizhen/works/open_source/model_convert/ros2_tools/motion_editor/install/motion_editor/lib/python3.10/site-packages/motion_editor/__pycache__/motion_editor.cpython-310.pyc
 /home/lizhen/works/open_source/model_convert/ros2_tools/motion_editor/install/motion_editor/lib/python3.10/site-packages/motion_editor/__pycache__/__init__.cpython-310.pyc
-/home/lizhen/works/open_source/model_convert/ros2_tools/motion_editor/install/motion_editor/lib/python3.10/site-packages/motion_editor/__pycache__/ctrl_ui.cpython-310.pyc
 /home/lizhen/works/open_source/model_convert/ros2_tools/motion_editor/install/motion_editor/share/ament_index/resource_index/packages/motion_editor
 /home/lizhen/works/open_source/model_convert/ros2_tools/motion_editor/install/motion_editor/share/motion_editor/package.xml
 /home/lizhen/works/open_source/model_convert/ros2_tools/motion_editor/install/motion_editor/share/motion_editor/launch/motion_editor.launch.py
