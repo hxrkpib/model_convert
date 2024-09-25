@@ -1,0 +1,5 @@
+  File "/home/lizhen/works/open_source/model_convert/ros2_tools/motion_editor/install/motion_editor/lib/python3.10/site-packages/motion_editor/motion_editor.py", line 51
+    def read_csv_to_dict(self.file_path):
+                             ^
+SyntaxError: invalid syntax
+

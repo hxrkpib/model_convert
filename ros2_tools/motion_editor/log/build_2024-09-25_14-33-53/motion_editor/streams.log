@@ -1,0 +1,29 @@
+[0.359s] Invoking command in '/home/lizhen/works/open_source/model_convert/ros2_tools/motion_editor/src/motion_editor': PYTHONPATH=/home/lizhen/works/open_source/model_convert/ros2_tools/motion_editor/build/motion_editor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lizhen/works/open_source/model_convert/ros2_tools/motion_editor/install/motion_editor/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/motion_editor build --build-base /home/lizhen/works/open_source/model_convert/ros2_tools/motion_editor/build/motion_editor/build install --record /home/lizhen/works/open_source/model_convert/ros2_tools/motion_editor/build/motion_editor/install.log --single-version-externally-managed install_data
+[0.474s] running egg_info
+[0.481s] writing ../../build/motion_editor/motion_editor.egg-info/PKG-INFO
+[0.481s] writing dependency_links to ../../build/motion_editor/motion_editor.egg-info/dependency_links.txt
+[0.481s] writing entry points to ../../build/motion_editor/motion_editor.egg-info/entry_points.txt
+[0.481s] writing requirements to ../../build/motion_editor/motion_editor.egg-info/requires.txt
+[0.481s] writing top-level names to ../../build/motion_editor/motion_editor.egg-info/top_level.txt
+[0.579s] reading manifest file '../../build/motion_editor/motion_editor.egg-info/SOURCES.txt'
+[0.579s] adding license file 'LICENSE'
+[0.579s] writing manifest file '../../build/motion_editor/motion_editor.egg-info/SOURCES.txt'
+[0.580s] running build
+[0.580s] running build_py
+[0.580s] copying motion_editor/motion_editor.py -> /home/lizhen/works/open_source/model_convert/ros2_tools/motion_editor/build/motion_editor/build/lib/motion_editor
+[0.580s] copying motion_editor/__init__.py -> /home/lizhen/works/open_source/model_convert/ros2_tools/motion_editor/build/motion_editor/build/lib/motion_editor
+[0.580s] running install
+[0.582s] running install_lib
+[0.590s] copying /home/lizhen/works/open_source/model_convert/ros2_tools/motion_editor/build/motion_editor/build/lib/motion_editor/motion_editor.py -> /home/lizhen/works/open_source/model_convert/ros2_tools/motion_editor/install/motion_editor/lib/python3.10/site-packages/motion_editor
+[0.590s] byte-compiling /home/lizhen/works/open_source/model_convert/ros2_tools/motion_editor/install/motion_editor/lib/python3.10/site-packages/motion_editor/motion_editor.py to motion_editor.cpython-310.pyc
+[0.590s] running install_data
+[0.591s] copying resource/motion_editor -> /home/lizhen/works/open_source/model_convert/ros2_tools/motion_editor/install/motion_editor/share/ament_index/resource_index/packages
+[0.591s] copying package.xml -> /home/lizhen/works/open_source/model_convert/ros2_tools/motion_editor/install/motion_editor/share/motion_editor
+[0.591s] copying launch/motion_editor.launch.py -> /home/lizhen/works/open_source/model_convert/ros2_tools/motion_editor/install/motion_editor/share/motion_editor/launch
+[0.591s] running install_egg_info
+[0.598s] removing '/home/lizhen/works/open_source/model_convert/ros2_tools/motion_editor/install/motion_editor/lib/python3.10/site-packages/motion_editor-0.0.0-py3.10.egg-info' (and everything under it)
+[0.598s] Copying ../../build/motion_editor/motion_editor.egg-info to /home/lizhen/works/open_source/model_convert/ros2_tools/motion_editor/install/motion_editor/lib/python3.10/site-packages/motion_editor-0.0.0-py3.10.egg-info
+[0.599s] running install_scripts
+[0.660s] Installing motion_editor script to /home/lizhen/works/open_source/model_convert/ros2_tools/motion_editor/install/motion_editor/lib/motion_editor
+[0.660s] writing list of installed files to '/home/lizhen/works/open_source/model_convert/ros2_tools/motion_editor/build/motion_editor/install.log'
+[0.674s] Invoked command in '/home/lizhen/works/open_source/model_convert/ros2_tools/motion_editor/src/motion_editor' returned '0': PYTHONPATH=/home/lizhen/works/open_source/model_convert/ros2_tools/motion_editor/build/motion_editor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lizhen/works/open_source/model_convert/ros2_tools/motion_editor/install/motion_editor/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/motion_editor build --build-base /home/lizhen/works/open_source/model_convert/ros2_tools/motion_editor/build/motion_editor/build install --record /home/lizhen/works/open_source/model_convert/ros2_tools/motion_editor/build/motion_editor/install.log --single-version-externally-managed install_data

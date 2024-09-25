@@ -6,8 +6,20 @@ path = "/home/lizhen/fbx"
 start_frame = 1  # 替换为你的起始帧
 end_frame = 10   # 替换为你的结束帧
 # 指定要输出的骨骼名称列表
-selected_bones = [("mixamorig:Hips", "body")]  # 替换为你要输出的骨骼名称
-
+selected_bones = [("mixamorig:Hips", "body"),
+                  ("mixamorig:LeftArm", "left_arm_upper"),
+                  ("mixamorig:LeftForeArm", "left_arm_lower"),
+                  ("mixamorig:LeftHand", "left_hand"),
+                  ("mixamorig:RightArm", "right_arm_upper"),
+                  ("mixamorig:RightForeArm", "right_arm_lower"),
+                  ("mixamorig:RightHand", "right_hand"),
+                  ("mixamorig:LeftUpLeg", "left_leg_thigh"),
+                  ("mixamorig:LeftLeg", "left_leg_calf"),
+                  ("mixamorig:LeftToeBase", "left_leg_foot"),
+                  ("mixamorig:RightUpLeg", "right_leg_thigh"),
+                  ("mixamorig:RightLeg", "right_leg_calf"),
+                  ("mixamorig:RightToeBase", "right_leg_foot"),
+                  ]  # 替换为你要输出的骨骼名称
 
 # 设置输出文件路径
 output_file_path = os.path.join(
@@ -18,6 +30,15 @@ output_dir = os.path.dirname(output_file_path)
 if not os.path.exists(output_dir):
     os.makedirs(output_dir)
 
+# 获取当前活动动作
+action = bpy.context.object.animation_data.action
+
+# 获取总帧数
+if action:
+    total_frames = action.frame_range[1] - action.frame_range[0] + 1
+    print(f"Total frames in the loaded BVH: {total_frames}")
+else:
+    print("No action found for the loaded BVH.")
 
 # 获取当前场景的帧率 (FPS)
 fps = bpy.context.scene.render.fps

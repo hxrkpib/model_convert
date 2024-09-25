@@ -1,0 +1,31 @@
+running egg_info
+writing ../../build/motion_editor/motion_editor.egg-info/PKG-INFO
+writing dependency_links to ../../build/motion_editor/motion_editor.egg-info/dependency_links.txt
+writing entry points to ../../build/motion_editor/motion_editor.egg-info/entry_points.txt
+writing requirements to ../../build/motion_editor/motion_editor.egg-info/requires.txt
+writing top-level names to ../../build/motion_editor/motion_editor.egg-info/top_level.txt
+reading manifest file '../../build/motion_editor/motion_editor.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/motion_editor/motion_editor.egg-info/SOURCES.txt'
+running build
+running build_py
+copying motion_editor/motion_editor.py -> /home/lizhen/works/open_source/model_convert/ros2_tools/motion_editor/build/motion_editor/build/lib/motion_editor
+copying motion_editor/__init__.py -> /home/lizhen/works/open_source/model_convert/ros2_tools/motion_editor/build/motion_editor/build/lib/motion_editor
+copying motion_editor/ctrl_ui.py -> /home/lizhen/works/open_source/model_convert/ros2_tools/motion_editor/build/motion_editor/build/lib/motion_editor
+running install
+running install_lib
+copying /home/lizhen/works/open_source/model_convert/ros2_tools/motion_editor/build/motion_editor/build/lib/motion_editor/motion_editor.py -> /home/lizhen/works/open_source/model_convert/ros2_tools/motion_editor/install/motion_editor/lib/python3.10/site-packages/motion_editor
+copying /home/lizhen/works/open_source/model_convert/ros2_tools/motion_editor/build/motion_editor/build/lib/motion_editor/ctrl_ui.py -> /home/lizhen/works/open_source/model_convert/ros2_tools/motion_editor/install/motion_editor/lib/python3.10/site-packages/motion_editor
+byte-compiling /home/lizhen/works/open_source/model_convert/ros2_tools/motion_editor/install/motion_editor/lib/python3.10/site-packages/motion_editor/motion_editor.py to motion_editor.cpython-310.pyc
+byte-compiling /home/lizhen/works/open_source/model_convert/ros2_tools/motion_editor/install/motion_editor/lib/python3.10/site-packages/motion_editor/ctrl_ui.py to ctrl_ui.cpython-310.pyc
+running install_data
+copying resource/motion_editor -> /home/lizhen/works/open_source/model_convert/ros2_tools/motion_editor/install/motion_editor/share/ament_index/resource_index/packages
+copying package.xml -> /home/lizhen/works/open_source/model_convert/ros2_tools/motion_editor/install/motion_editor/share/motion_editor
+copying launch/motion_editor.launch.py -> /home/lizhen/works/open_source/model_convert/ros2_tools/motion_editor/install/motion_editor/share/motion_editor/launch
+copying rviz/default.rviz -> /home/lizhen/works/open_source/model_convert/ros2_tools/motion_editor/install/motion_editor/share/motion_editor/rviz
+running install_egg_info
+removing '/home/lizhen/works/open_source/model_convert/ros2_tools/motion_editor/install/motion_editor/lib/python3.10/site-packages/motion_editor-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/motion_editor/motion_editor.egg-info to /home/lizhen/works/open_source/model_convert/ros2_tools/motion_editor/install/motion_editor/lib/python3.10/site-packages/motion_editor-0.0.0-py3.10.egg-info
+running install_scripts
+Installing motion_editor script to /home/lizhen/works/open_source/model_convert/ros2_tools/motion_editor/install/motion_editor/lib/motion_editor
+writing list of installed files to '/home/lizhen/works/open_source/model_convert/ros2_tools/motion_editor/build/motion_editor/install.log'

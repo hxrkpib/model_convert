@@ -1,0 +1,2 @@
+[console_scripts]
+motion_editor = motion_editor.motion_editor:main
